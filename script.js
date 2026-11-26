@@ -1,6 +1,6 @@
 /**
- * Premium Joint Wedding Invitation Website — Interactive Logic
- * Couples: Mohammad Sinan UP & Mubhasira • Safanath UP & Thajuddin P
+ * Premium Nikah & Wedding Invitation Website — Interactive Logic
+ * Couple: Hiba Parveen & Afsal
  * Features: Curtain Opening Video Synchronizer, Cinematic Text Reveal,
  * Luxury Background Music Player, Real-time Countdown & Google Calendar Export.
  */
@@ -170,7 +170,7 @@ function initFloatingMusicPlayer() {
 }
 
 /* ==========================================================================
-   3. REAL-TIME COUNTDOWN TIMER (10 January 2027 at 6:00 PM)
+   3. REAL-TIME COUNTDOWN TIMER (13 December 2026 at 10:30 AM)
    ========================================================================== */
 function initWeddingCountdown() {
   const daysEl = document.getElementById('days');
@@ -179,8 +179,8 @@ function initWeddingCountdown() {
   const secondsEl = document.getElementById('seconds');
   if (!daysEl || !hoursEl || !minutesEl || !secondsEl) return;
 
-  // Target Date: 10 January 2027 18:00:00 (Local Time)
-  const targetDate = new Date('2027-01-10T18:00:00+05:30').getTime();
+  // Target Date: 13 December 2026 10:30:00 (Local Time)
+  const targetDate = new Date('2026-12-13T10:30:00+05:30').getTime();
 
   function updateTimer() {
     const now = new Date().getTime();
@@ -255,10 +255,10 @@ function initCalendarAndSharing() {
   if (saveAllBtn) {
     saveAllBtn.addEventListener('click', () => {
       generateGoogleCalendarLink(
-        'Joint Wedding Reception — Mohammad Sinan & Mubhasira • Safanath & Thajuddin',
-        'Sagar Auditorium, Panemangalore',
-        '2027-01-10T18:00:00',
-        '2027-01-10T23:00:00'
+        'Nikah & Reception — Hiba Parveen & Afsal',
+        'APM Auditorium & AMANATH Convention Centre, Tirur',
+        '2026-12-13T10:30:00',
+        '2026-12-13T21:00:00'
       );
     });
   }
@@ -270,14 +270,21 @@ function initCalendarAndSharing() {
     if (btn) {
       btn.addEventListener('click', () => {
         const shareText = encodeURIComponent(
-          `*Joint Wedding Invitation*\n\n` +
-          `With the blessings of Allah, we cordially invite you and your family to celebrate the wedding ceremonies of:\n\n` +
-          `✦ *Mohammad Sinan UP* & *Mubhasira*\n` +
-          `✦ *Safanath UP* & *Thajuddin P*\n\n` +
-          `📅 *08 Jan 2027* — Nikkah (A&B Juma Masjid, Kunthoor)\n` +
-          `📅 *09 Jan 2027* — Mehendi (Kaje House, Kunthoor)\n` +
-          `📅 *10 Jan 2027* — Wedding Reception (Sagar Auditorium, Panemangalore)\n\n` +
-          `Kindly view our digital wedding invitation and find directions here:\n${window.location.href}`
+          `*Nikah Invitation*\n\n` +
+          `With the blessings of Allah, we cordially invite you and your family to celebrate the sacred Nikah ceremony of:\n\n` +
+          `✦ *Hiba Parveen P V*\n` +
+          `    _D/o Mr. Saidalavi P V & Mrs. Ayisha K_\n` +
+          `    _Paraparambil Vellamkottil (H), Ovungal P.O., Thalakkadathur, Tirur_\n\n` +
+          `✦ *Afsal*\n` +
+          `    _S/o Mr. Eandutty Haji V K & Mrs. Fathima T_\n` +
+          `    _Verum Kundil (H), Cheriyamundam P.O., Parapputhadam, Tirur_\n\n` +
+          `📅 *Sunday, 13 December 2026* (4 Rajab 1448 AH)\n\n` +
+          `🕌 *Nikah Ceremony:* 10:30 AM\n` +
+          `📍 *Venue:* APM Auditorium, Thalakkadathur, Tirur\n` +
+          `🗺️ Directions: https://share.google/bri1CXzoEXmwAFi6x\n\n` +
+          `🍽️ *Reception:* 5:00 PM\n` +
+          `📍 *Venue:* AMANATH Convention Centre, Iringavoor Road, Meeshapadi, Tirur\n\n` +
+          `Kindly view our digital invitation here:\n${window.location.href}`
         );
         window.open(`https://api.whatsapp.com/send?text=${shareText}`, '_blank');
       });

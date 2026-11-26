@@ -517,8 +517,8 @@ body.initial-lock {
 .bride-name {
   font-family: var(--font-script);
   font-weight: 400;
-  font-size: clamp(1.8rem, 5.8vw, 2.2rem);
-  line-height: 1.18;
+  font-size: clamp(2.2rem, 7.2vw, 2.75rem);
+  line-height: 1.15;
   color: var(--color-white-warm);
   text-align: center;
   text-shadow: 0 3px 12px rgba(0, 0, 0, 0.95), 0 0 14px rgba(227, 197, 141, 0.4);
@@ -817,6 +817,52 @@ body.initial-lock {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.blessed-person-card {
+  width: 100%;
+  max-width: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4px 6px;
+}
+
+.blessed-person-card .blessed-name {
+  font-family: var(--font-script);
+  font-size: clamp(2.1rem, 6.8vw, 2.6rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: #5E081B;
+  text-align: center;
+  letter-spacing: 0.01em;
+  margin-bottom: 3px;
+}
+
+.blessed-parentage {
+  font-family: var(--font-serif-luxury);
+  font-size: clamp(0.95rem, 3.2vw, 1.08rem);
+  font-style: italic;
+  color: #4A1A24;
+  line-height: 1.45;
+  margin-top: 2px;
+}
+
+.blessed-parentage strong {
+  font-style: normal;
+  font-weight: 600;
+  color: #2D040C;
+}
+
+.blessed-residence {
+  font-family: var(--font-sans);
+  font-size: clamp(0.72rem, 2.3vw, 0.78rem);
+  font-weight: 500;
+  color: #7A4E58;
+  letter-spacing: 0.04em;
+  line-height: 1.45;
+  margin-top: 5px;
 }
 
 .blessed-name {
@@ -2105,6 +2151,9 @@ body.initial-lock {
   max-width: 390px;
   margin: 0 auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .venue-burgundy-card {
@@ -2126,11 +2175,11 @@ body.initial-lock {
 
 .venue-script-title {
   font-family: 'Alex Brush', cursive;
-  font-size: clamp(2.3rem, 7.8vw, 3rem);
+  font-size: clamp(2rem, 7vw, 2.75rem);
   font-weight: 400;
   color: #FFF9F2;
   margin: 0 0 10px 0;
-  line-height: 1.15;
+  line-height: 1.18;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
 }
 

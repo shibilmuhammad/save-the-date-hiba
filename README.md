@@ -1,1 +1,10 @@
 # save-the-date-hiba
+
+A luxury cinematic mobile-first digital wedding &amp; Nikah invitation website for:
+- **Hiba Parveen P V** &amp; **Afsal**
+
+📅 **Date:** Sunday, 13 December 2026 (4 Rajab 1448 AH)  
+🕌 **Nikah Ceremony:** 10:30 AM at APM Auditorium, Thalakkadathur, Tirur  
+🍽️ **Reception:** 5:00 PM at AMANATH Convention Centre, Iringavoor Road, Meeshapadi, Tirur  
+
+Built with love by **Invitegram**.
